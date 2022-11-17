@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+ <link rel="stylesheet" href="stylesFashion.css">   
+</head>
+<body>
+  <h1 id="title">Survey for Clothing Style</h1>
+  <p id="description"><em>Thank you for your input that will help the vision of this company.</em></p>
+  <form id="survey-form">
+  <div>
+    <label id="name-label">Name:</label>
+  <input id="name" type="text" placeholder="Enter your name" required>
+    <label id="email-label">Email:</label>
+      <input id="email" type="email" placeholder="Email" required>
+    <label id="number-label">Age:</label>
+      <input id="number" type="number" placeholder="Age" min="10" max="70" required>
+</div>
+<div>
+  <p>Which Style Best Describes You?</p>
+  <select id="dropdown" name="dropdown">
+    <option>Select Current Style</option>
+    <option value="style">Sporty</option>
+    <option value="style">Streetwear</option>
+    <option value="style">Business</option>
+  </select>
+</div>
+<div>
+  <p>Would you recommend Discrete Styles to a friend?</p>
+    <label>
+      <input type="radio" value="suggestion" name="suggestion" class="inline">Yes
+    </label>
+    <label>
+      <input type="radio" value="suggestion" name="suggestion" class="inline">No
+    </label>
+  </div>
+<div>
+  <p>What can we improve on?</p>
+    <label>
+      <input type="checkbox" value="inventory" name="inventory" class="inline">Textiles
+    </label>
+    <label>
+      <input type="checkbox" value="inventory" name="inventory" class="inline">Inventory
+    </label>
+    <label>
+      <input type="checkbox" value="inventory" name="inventory" class="inline">Variety
+    </label>
+    <label>
+      <input type="checkbox" value="inventory" name="inventory" class="inline">Nostalgia
+    </label>
+</div>
+<div>
+  <p>Any comments or suggestions</p>
+    <label>
+      <textarea id="comments" name="comment" rows="3" cols="30" placeholder="Enter your comment here...."></textarea>
+    </label>
+</div>
+<div>
+    <button id="submit" type="submit">Submit</button>
+</div>
+  </form>
